@@ -17,7 +17,6 @@ android {
 
     buildTypes {
         release {
-            debuggable      false
             jniDebuggable   false
             minifyEnabled   true
             proguardFiles = [
@@ -26,16 +25,16 @@ android {
             ]
         }
         debug {
-            debuggable      true
             jniDebuggable   true
             minifyEnabled   false
         }
     }
-
-    lintOptions {
-        disable 'MissingTranslation'
+    namespace 'com.github.warren_bank.mock_location.service.microg_nlp_backend.artifacts'
+    lint {
         abortOnError true
+        disable 'MissingTranslation'
     }
+
 }
 
 dependencies {

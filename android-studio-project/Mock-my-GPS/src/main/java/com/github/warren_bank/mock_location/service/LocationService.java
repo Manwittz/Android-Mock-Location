@@ -135,7 +135,7 @@ public class LocationService extends Service {
         notification.flags         = 0;
         notification.flags        |= Notification.FLAG_ONGOING_EVENT;
         notification.flags        |= Notification.FLAG_NO_CLEAR;
-        notification.icon          = R.drawable.launcher;
+        notification.icon          = R.mipmap.ic_launcher;
         notification.tickerText    = getString(R.string.notification_service_ticker);
         notification.contentIntent = getPendingIntent_MainActivity();
      // notification.deleteIntent  = getPendingIntent_StopService();
@@ -152,7 +152,7 @@ public class LocationService extends Service {
         }
 
         RemoteViews contentView    = new RemoteViews(getPackageName(), R.layout.service_notification);
-        contentView.setImageViewResource(R.id.notification_icon, R.drawable.launcher);
+        contentView.setImageViewResource(R.id.notification_icon, R.mipmap.ic_launcher);
         contentView.setTextViewText(R.id.notification_text_line1, getString(R.string.notification_service_content_line1));
         contentView.setTextViewText(R.id.notification_text_line2, getString(R.string.notification_service_content_line2));
 

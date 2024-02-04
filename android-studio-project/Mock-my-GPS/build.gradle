@@ -80,11 +80,12 @@ android {
             shrinkResources false
         }
     }
-
-    lintOptions {
-        disable 'MissingTranslation'
+    namespace 'com.github.warren_bank.mock_location'
+    lint {
         abortOnError true
+        disable 'MissingTranslation'
     }
+
 }
 
 dependencies {

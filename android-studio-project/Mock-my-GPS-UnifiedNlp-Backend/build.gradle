@@ -50,11 +50,12 @@ android {
             shrinkResources false
         }
     }
-
-    lintOptions {
-        disable 'MissingTranslation'
+    namespace 'com.github.warren_bank.mock_location.service.microg_nlp_backend'
+    lint {
         abortOnError true
+        disable 'MissingTranslation'
     }
+
 }
 
 dependencies {
